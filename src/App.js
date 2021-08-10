@@ -6,6 +6,7 @@ import Todolist from './pages/Todolist/Todolist'
 import CountdownTimer from './pages/CountdownTimer/CountdownTimer'
 import PasswordGenerator from './pages/PasswordGenerator/PasswordGenerator'
 import HackerNews from './pages/HackerNews/App'
+import Calculator from './pages/Calculator/Calculator'
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route exact path="/projects/countdown-timer" component={CountdownTimer} />
           <Route exact path="/projects/password-generator" component={PasswordGenerator} />
           <Route path="/projects/hacker-news" component={HackerNews} />
+          <Route path="/projects/calculator" component={Calculator} />
         </Switch>
       </Router>
     </>

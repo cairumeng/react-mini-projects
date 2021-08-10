@@ -2,6 +2,7 @@ import TodolistImage from '../images/todolist.png'
 import CountdownTimerImage from '../images/countdownTimer.jpg'
 import PasswordGeneratorImage from '../images/passwordGenerator.jpg'
 import HackerNews from '../images/hackerNews.jpg'
+import Caculator from '../images/caculator.jpg'
 import { useHistory } from 'react-router-dom'
 
 const techColors = {
@@ -41,6 +42,13 @@ const projects = [
     image: HackerNews,
     description: 'A HackerNews clone with react and open api.',
     tags: ['react', 'tailwindcss', 'react-router', 'open api'],
+  },
+  {
+    name: 'Calculator',
+    slug: 'calculator',
+    image: Caculator,
+    description: 'This calculator is based on javascript function and easy to use',
+    tags: ['react', 'tailwindcss'],
   },
 ]
 
