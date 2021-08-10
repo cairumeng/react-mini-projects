@@ -38,19 +38,19 @@ const Todolist = () => {
   }
   return (
     <div className="mx-auto mt-20 w-5/12">
-      <div className="text-4xl text-center font-bold text-purple-600">TodoList</div>
+      <div className="text-4xl text-center font-bold">TodoList</div>
       <div className="flex justify-center mt-5 mb-2">
         <div className="flex mr-5 flex-grow">
           <input
             type="text"
             placeholder="Add your task here..."
-            className="w-full appearance-none border border-gray-300 rounded-l-md py-2 px-4  text-gray-700 placeholder-gray-400 shadow-sm  focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent"
+            className="w-full appearance-none border border-gray-300 rounded-l-md py-2 px-4  text-gray-700 placeholder-gray-400 shadow-sm  focus:outline-none focus:ring-2  focus:border-transparent"
             value={newTask}
             onChange={(e) => setNewTask(e.target.value)}
           />
           <button
             type="button"
-            className="bg-purple-600 hover:bg-purple-700 text-white px-3 rounded-r-md"
+            className="bg-blue-500 hover:bg-blue-600 text-white px-3 rounded-r-md"
             onClick={addTaskHandler}
           >
             Add
