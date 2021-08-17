@@ -1,10 +1,9 @@
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom'
+import { Switch, Route, Link } from 'react-router-dom'
 import Comments from './components/Comments'
 import HackerNews from './components/HackerNews'
 import User from './components/User'
 
 const App = () => {
-  const pathname = '/projects/hacker-news'
   return (
     <div className="container mx-auto mt-10 px-20">
       <div className="flex divide-x-2 divide-gray-400 text-2xl font-bold">
@@ -21,6 +20,7 @@ const App = () => {
           POLLS
         </Link>
       </div>
+
       <Switch>
         <Route exact path="/projects/hacker-news/:slug?" component={HackerNews} />
         <Route exact path="/projects/hacker-news/users/:name" component={User} />
