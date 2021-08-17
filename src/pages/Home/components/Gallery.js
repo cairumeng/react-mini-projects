@@ -4,7 +4,7 @@ import PasswordGeneratorImage from '../images/passwordGenerator.jpg'
 import HackerNews from '../images/hackerNews.jpg'
 import Caculator from '../images/caculator.jpg'
 import Pokemon from '../images/pokemon.jpg'
-
+import TicTacToe from '../images/TicTacToe.jpg'
 import { useHistory } from 'react-router-dom'
 
 const techColors = {
@@ -59,6 +59,14 @@ const projects = [
     description:
       'A pokemon trading card game website with open api, react Router, custom hook and lazy load',
     tags: ['react', 'tailwindcss', 'react-router', 'open api'],
+  },
+  {
+    name: 'TicTacToe',
+    slug: 'tic-tac-toe',
+    image: TicTacToe,
+    description:
+      'A Tic-Tac-Toe game for two players, X and O, who take turns marking the spaces in a 3×3 grid.',
+    tags: ['react', 'tailwindcss'],
   },
 ]
 

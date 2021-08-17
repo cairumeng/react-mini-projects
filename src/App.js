@@ -8,6 +8,7 @@ import PasswordGenerator from './pages/PasswordGenerator/PasswordGenerator'
 import HackerNews from './pages/HackerNews/App'
 import Calculator from './pages/Calculator/Calculator'
 import Pokemon from './pages/Pokemon/App'
+import TicTacToe from './pages/TicTacToe/TicTacToe'
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
         <Route path="/projects/hacker-news" component={HackerNews} />
         <Route path="/projects/calculator" component={Calculator} />
         <Route path="/projects/pokemon" component={Pokemon} />
+        <Route path="/projects/tic-tac-toe" component={TicTacToe} />
       </Switch>
     </Router>
   )
