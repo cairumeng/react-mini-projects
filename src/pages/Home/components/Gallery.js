@@ -3,6 +3,8 @@ import CountdownTimerImage from '../images/countdownTimer.jpg'
 import PasswordGeneratorImage from '../images/passwordGenerator.jpg'
 import HackerNews from '../images/hackerNews.jpg'
 import Caculator from '../images/caculator.jpg'
+import Pokemon from '../images/pokemon.jpg'
+
 import { useHistory } from 'react-router-dom'
 
 const techColors = {
@@ -49,6 +51,14 @@ const projects = [
     image: Caculator,
     description: 'This calculator is based on javascript function and easy to use',
     tags: ['react', 'tailwindcss'],
+  },
+  {
+    name: 'Pokemon',
+    slug: 'pokemon',
+    image: Pokemon,
+    description:
+      'A pokemon trading card game website with open api, react Router, custom hook and lazy load',
+    tags: ['react', 'tailwindcss', 'react-router', 'open api'],
   },
 ]
 

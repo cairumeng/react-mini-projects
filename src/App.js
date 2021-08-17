@@ -7,24 +7,24 @@ import CountdownTimer from './pages/CountdownTimer/CountdownTimer'
 import PasswordGenerator from './pages/PasswordGenerator/PasswordGenerator'
 import HackerNews from './pages/HackerNews/App'
 import Calculator from './pages/Calculator/Calculator'
+import Pokemon from './pages/Pokemon/App'
 
 function App() {
   return (
-    <>
+    <Router>
       <Header />
-      <Router>
-        <Switch>
-          <Route exact path="/">
-            <Home />
-          </Route>
-          <Route exact path="/projects/todo-list" component={Todolist} />
-          <Route exact path="/projects/countdown-timer" component={CountdownTimer} />
-          <Route exact path="/projects/password-generator" component={PasswordGenerator} />
-          <Route path="/projects/hacker-news" component={HackerNews} />
-          <Route path="/projects/calculator" component={Calculator} />
-        </Switch>
-      </Router>
-    </>
+      <Switch>
+        <Route exact path="/">
+          <Home />
+        </Route>
+        <Route exact path="/projects/todo-list" component={Todolist} />
+        <Route exact path="/projects/countdown-timer" component={CountdownTimer} />
+        <Route exact path="/projects/password-generator" component={PasswordGenerator} />
+        <Route path="/projects/hacker-news" component={HackerNews} />
+        <Route path="/projects/calculator" component={Calculator} />
+        <Route path="/projects/pokemon" component={Pokemon} />
+      </Switch>
+    </Router>
   )
 }
 
