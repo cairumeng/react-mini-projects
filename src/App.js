@@ -9,6 +9,7 @@ import HackerNews from './pages/HackerNews/App'
 import Calculator from './pages/Calculator/Calculator'
 import Pokemon from './pages/Pokemon/App'
 import TicTacToe from './pages/TicTacToe/TicTacToe'
+import ShoppingCart from './pages/ShoppingCart/Home'
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
         <Route path="/projects/calculator" component={Calculator} />
         <Route path="/projects/pokemon" component={Pokemon} />
         <Route path="/projects/tic-tac-toe" component={TicTacToe} />
+        <Route path="/projects/shopping-cart" component={ShoppingCart} />
       </Switch>
     </Router>
   )
