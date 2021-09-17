@@ -31,7 +31,7 @@ const CV = () => {
           <div className="col-span-5 flex flex-col justify-end py-3">
             <div className="flex items-center">
               <i className="lni lni-github text-blue-500 text-lg mr-2 font-bold"></i>
-              <a href="https://github.com/cairumeng" className="text-gray-500">
+              <a href="https://github.com/cairumeng" target="_blank" className="text-gray-500">
                 https://github.com/cairumeng
               </a>
             </div>
@@ -97,7 +97,7 @@ const CV = () => {
                   </li>
                   <li>
                     <i className="lni lni-pointer-right text-blue-500 mr-2 font-bold"></i>{' '}
-                    l'authentification avec JWT
+                    authentification avec JWT
                   </li>
                   <li>
                     <i className="lni lni-pointer-right text-blue-500 mr-2 font-bold"></i> le
@@ -119,17 +119,35 @@ const CV = () => {
           </div>
 
           <div className="grid grid-cols-12 gap-4 mt-4">
-            <div className="col-span-2 text-blue-500">2019-2020</div>
+            <div className="col-span-2 text-blue-500">2021</div>
             <div className="col-span-10">
-              <div className="font-semibold">wukongsongcai.com</div>
+              <div className="font-semibold">movies.com</div>
               <div className="text-gray-500">
-                Un supermaché en ligne
+                Une plateforme pour découvrir les actualités et dossiers cinéma.
                 <ul>
-                  <li>Développement backend, la conception du site.</li>
                   <li>
-                    <strong>Stack technique</strong>: Laravel, vuejs, ES6, git, tailwindcss
+                    <i className="lni lni-pointer-right text-blue-500 mr-2 font-bold"></i>
+                    utilisation des open API comme backend
+                  </li>
+                  <li>
+                    <i className="lni lni-pointer-right text-blue-500 mr-2 font-bold"></i>
+                    création d'un hook personnalisé pour récupérer les données des films et
+                    paginations
+                  </li>
+
+                  <li>
+                    <i className="lni lni-pointer-right text-blue-500 mr-2 font-bold"></i>
+                    responsive design
                   </li>
                 </ul>
+                <div className="mt-1">
+                  <label className="border px-1 rounded">Themoviedb api</label>
+                  <label className="border px-1 rounded">React</label>
+                  <label className="border px-1 rounded">React Router</label>
+                  <label className="border px-1 rounded">Youtube Modal</label>
+                  <label className="border px-1 rounded">Tailwindcss</label>
+                  <label className="border px-1 rounded">Material-ui</label>
+                </div>
               </div>
             </div>
           </div>
@@ -142,7 +160,7 @@ const CV = () => {
             <div className="col-span-10">
               <div className="font-semibold">Co-foundatrice | E-supermarché: wukongsongcai.com</div>
               <div className="text-gray-500">
-                un supermarché en ligne visant à la clientèle asiatique dans la région parisienne
+                Un supermarché en ligne visant à la clientèle asiatique dans la région parisienne
                 avec un chiffre d'affaires d'environ 600k par an.
               </div>
             </div>

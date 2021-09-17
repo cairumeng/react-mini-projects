@@ -9,6 +9,7 @@ import ShoppingCart from './images/shoppingCart.jpg'
 import { useHistory } from 'react-router-dom'
 
 const techColors = {
+  'material-ui': 'red-800',
   react: 'green-500',
   tailwindcss: 'blue-500',
   laravel: 'red-500',
@@ -16,6 +17,23 @@ const techColors = {
   'react-router': 'purple-500',
   'open api': 'pink-500',
 }
+
+const deployedProjects = [
+  {
+    name: 'Livrensemble',
+    url: 'http://livresemble.com',
+    image: ShoppingCart,
+    description: 'Un plateforme site pour regrouper des commandes et une livraison ensemble.',
+    tags: ['laravel', 'react', 'react router', 'tailwindcss'],
+  },
+  {
+    name: 'Movies',
+    url: 'http://movies.com',
+    image: Pokemon,
+    description: 'Une plateforme pour découvrir les actualités et dossiers cinéma.',
+    tags: ['react', 'tailwindcss', 'material-ui', 'react-router', 'open api'],
+  },
+]
 
 const projects = [
   {
@@ -39,13 +57,7 @@ const projects = [
     description: 'A HackerNews clone with react and open api.',
     tags: ['react', 'tailwindcss', 'react-router', 'open api'],
   },
-  {
-    name: 'Todo list',
-    slug: 'todo-list',
-    image: TodolistImage,
-    description: 'A todo list app built to keep track of errands or tasks that to de done.',
-    tags: ['react', 'tailwindcss'],
-  },
+
   {
     name: 'Calculator',
     slug: 'calculator',
@@ -58,6 +70,13 @@ const projects = [
     slug: 'password-generator',
     image: PasswordGeneratorImage,
     description: 'An app that creates random or customized passwords for users.',
+    tags: ['react', 'tailwindcss'],
+  },
+  {
+    name: 'Todo list',
+    slug: 'todo-list',
+    image: TodolistImage,
+    description: 'A todo list app built to keep track of errands or tasks that to de done.',
     tags: ['react', 'tailwindcss'],
   },
   {
@@ -81,10 +100,18 @@ const projects = [
 
 const ProjectCard = ({ project }) => {
   const history = useHistory()
+
+  const redirect = () => {
+    if (project.slug) {
+      history.push(`/gallery/${project.slug}`)
+    } else {
+      window.open(project.url, '_blank')
+    }
+  }
   return (
     <div
       className="flex h-44 md:h-56 max-w-xl bg-white shadow-lg rounded-lg overflow-hidden mt-10 mx-auto cursor-pointer"
-      onClick={() => history.push(`/gallery/${project.slug}`)}
+      onClick={redirect}
     >
       <img className="w-1/2" src={project.image} />
       <div className="flex flex-col justify-between w-1/2 p-2 md:p-4">
@@ -114,10 +141,19 @@ const ProjectCard = ({ project }) => {
 }
 
 const Gallery = () => (
-  <div className="flex flex-wrap p-15 mx-5 mb-10">
-    {projects.map((project, index) => (
-      <ProjectCard project={project} key={index} />
-    ))}
+  <div className="mx-5">
+    <h1 className="text-center text-xl font-bold">Projects</h1>
+    <div className="flex flex-wrap mb-10">
+      {deployedProjects.map((project, index) => (
+        <ProjectCard project={project} key={index} />
+      ))}
+    </div>
+    <h1 className="text-center text-xl font-bold">Gallery</h1>
+    <div className="flex flex-wrap mb-10">
+      {projects.map((project, index) => (
+        <ProjectCard project={project} key={index} />
+      ))}
+    </div>
   </div>
 )
 
