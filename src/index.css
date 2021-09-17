@@ -56,3 +56,25 @@ body,
     opacity: 1;
   }
 }
+@media (min-width: 768px) {
+  .resume {
+    width: 800px;
+  }
+}
+
+@media (max-width: 768px) {
+  .text-overflow {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+  }
+
+  .tag-overflow {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+  }
+}
